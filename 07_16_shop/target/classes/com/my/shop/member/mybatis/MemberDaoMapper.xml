@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.my.shop.member.MemberDaoMapper">
+
+	<resultMap type="com.my.shop.member.Member" id="memberResult">
+		<result column="id" property="id" />
+		<result column="pwd" property="pwd" />
+		<result column="name" property="name" />
+		<result column="email" property="email" />
+		<result column="addr" property="addr" />
+		<result column="type" property="type" />
+	</resultMap>
+
+	<insert id="insertMember" parameterType="com.my.shop.member.Member">
+		insert into shop_member
+		values(#{id}, #{pwd}, #{name}, #{email}, #{addr}, #{type})
+	</insert>
+
+	<select id="selectById" parameterType="String" resultMap="memberResult">
+		select
+		* from shop_member where id = #{id}
+	</select>
+</mapper>

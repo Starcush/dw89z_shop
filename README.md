@@ -1,6 +1,3 @@
 # dw89z_shop
-test
-hellow world
+wrryyyyyyyyyyyyyyyyyyyyyyyyyy
 
-
-dw89 update readme file

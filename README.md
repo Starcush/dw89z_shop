@@ -6,4 +6,4 @@ dw89 update this file
 
 hello world
 
-![sign-up](demo/sign-up.gif | width=100)
+![sign-up](demo/sign-up.gif){: width="200" height="auto"}
